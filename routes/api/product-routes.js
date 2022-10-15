@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
         attributes: ['tag_name']
       }
     ]
-  }).then(catergoryData => res.json(categoryData))
+  }).then(categoryData => res.json(categoryData))
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -140,7 +140,7 @@ router.delete('/:id', (req, res) => {
       id:req.params.id
     }
   }).then(ProductData => {
-    if (!productData) {
+    if (!ProductData) {
       res.status(404).json({ message: 'There is no Product for this id :('});
       return;
     }

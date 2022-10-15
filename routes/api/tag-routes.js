@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     [
       {
         model:Product,
-        attributes: ['product_name', 'price', 'stock', 'product_id']
+        attributes: ['product_name', 'price', 'stock',]
       }
     ]
   }).then(tagData => res.json(tagData))
@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
     [
       {
         model:Product,
-        attributes: ['product_name', 'price', 'stock', 'product_id']
+        attributes: ['product_name', 'price', 'stock']
       }
     ]
   }).then(tagData => res.json(tagData))

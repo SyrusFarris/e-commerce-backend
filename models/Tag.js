@@ -8,7 +8,7 @@ Tag.init(
   {
     // define columns
     id: {
-      type: DataTypes.INTEGER,
+      type:DataTypes.INTEGER,
       allownull: false,
       primaryKey: true,
       autoIncrement: true
